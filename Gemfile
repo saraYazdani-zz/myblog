@@ -11,7 +11,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # for normalize rails
 gem 'normalize-rails'
 # for material framework
-gem 'materialize-sass' 
+gem 'materialize-sass'
+# for turbolinks
+gem 'jquery-turbolinks' 
 
 
 gem 'jquery-rails'
