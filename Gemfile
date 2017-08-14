@@ -13,7 +13,9 @@ gem 'normalize-rails'
 # for material framework
 gem 'materialize-sass'
 # for turbolinks
-gem 'jquery-turbolinks' 
+gem 'jquery-turbolinks'
+# for user integration
+gem 'devise' 
 
 
 gem 'jquery-rails'
