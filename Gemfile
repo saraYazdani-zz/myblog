@@ -16,7 +16,8 @@ gem 'materialize-sass'
 gem 'jquery-turbolinks'
 # for user integration
 gem 'devise'
-
+# for authorization of users
+gem 'pundit' 
 
 gem 'jquery-rails'
 gem 'turbolinks'
@@ -36,5 +37,5 @@ group :development, :test do
   # for testing mails
   gem 'letter_opener'
 
-  
+
 end
