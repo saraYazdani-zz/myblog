@@ -1,28 +1,28 @@
 <div class="container">
  <!-- Fixed New blog button -->
  <div class="fixed-action-btn" style="top: 50px; right: 24px;">
- <a class="btn-floating btn-large red" href="<%= new_blog_path %>">
- <i class="large material-icons">add</i>
- </a>
+   <a class="btn-floating btn-large red" href="<%= new_blog_path %>">
+     <i class="large material-icons">add</i>
+   </a>
  </div>
  <!-- Header of index-->
  <h1 class="center">MyBlog</h1>
- <!-- Indexes -->
- <div class="row">
- <!-- Handling each blog separate -->
- <% @blogs.each do |blog| %>
- <%= link_to blog_path(blog) do %>
- <div class="col s12 m4">
- <div class="card">
- <div class="card-content black-text">
- <span class="card-title black-text"><%= blog.title
-%></span>
- <p><%= blog.content.truncate(300, separator: " ")
-%></p>
- </div>
- </div>
- </div>
- <% end %>
- <% end %>
- </div>
+  <!-- Indexes -->
+  <div class="row">
+    <!-- Handling each blog separate -->
+    <% @blogs.each do |blog| %>
+    <%= link_to blog_path(blog) do %>
+    <div class="col s12 m4">
+      <div class="card">
+        <div class="card-content black-text">
+          <span class="card-title black-text"><%= blog.title%></span>
+            <% require 'rubygems' %>
+            <% require 'nokogiri' %>
+            <div><%= Nokogiri::HTML(blog.content).text.truncate(300, separator: ' ')%></div>
+        </div>
+      </div>
+    </div>
+   <% end %>
+   <% end %>
+  </div>
 </div>

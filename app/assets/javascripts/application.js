@@ -11,8 +11,9 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery.turbolinks 
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require materialize-sprockets
+//= require ckeditor/init 
 //= require turbolinks
 //= require_tree .

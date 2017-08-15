@@ -17,7 +17,12 @@ gem 'jquery-turbolinks'
 # for user integration
 gem 'devise'
 # for authorization of users
-gem 'pundit' 
+gem 'pundit'
+# for image attachments
+gem 'paperclip'
+
+# for WYSIWYG editor
+gem 'ckeditor' 
 
 gem 'jquery-rails'
 gem 'turbolinks'
